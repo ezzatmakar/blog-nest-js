@@ -7,9 +7,8 @@ import { useContainer } from 'class-validator';
 import cookieParser from 'cookie-parser';
 import { json, urlencoded } from 'body-parser';
 import helmet from 'helmet';
+// TODO: needs to updated
 import { description } from '../package.json';
-
-
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {cors: true});
